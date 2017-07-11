@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         public void onReceiveLocation(BDLocation location) {
             mLatitude = location.getLatitude();
             mLongitude = location.getLongitude();
-            Log.e("zuobiao",mLatitude+"-----"+mLongitude);
+         //   Log.e("zuobiao",mLatitude+"-----"+mLongitude);
             setMapCenter(mLatitude,mLongitude);
         }
 
