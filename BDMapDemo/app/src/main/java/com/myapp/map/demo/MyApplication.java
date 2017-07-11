@@ -18,22 +18,11 @@ import com.baidu.mapapi.model.LatLng;
 
 public class MyApplication extends Application{
 
-    private ActivityBackStack mBackStack;
-
     @Override
     public void onCreate() {
         super.onCreate();
         SDKInitializer.initialize(this);
-        mBackStack=new ActivityBackStack();
-        registerActivityLifecycleCallbacks(mBackStack);
+
     }
-
-    public ActivityBackStack getBackHelper(){
-        return mBackStack;
-    }
-
-
-
-
 
     }
