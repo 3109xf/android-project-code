@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         LocationClientOption option=new LocationClientOption();
         option.setCoorType("bd09ll");
         option.setIsNeedAddress(true);
-        option.setScanSpan(2000);     //多久定位一次
+        option.setScanSpan(5000);     //多久定位一次
         mLocationClient.start();
         setMapCenter(mLatitude,mLongitude);
         Intent intent=new Intent(this,MarkerClusterDemo.class);
